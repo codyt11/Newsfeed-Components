@@ -1,3 +1,4 @@
+
 /* This is the data we will be using to create our articles */
 /* Look over this data, then proceed to line 91*/
 const data = [
@@ -101,6 +102,8 @@ const data = [
 
   Hint: You will need to use createElement more than once here!
 
+  
+
   Your function should take either an object as its one argument, or 5 separate arguments mapping to each piece of the data object above.
 
   Step 2: Add an event listener to the expandButton span. This listener should toggle the class 'article-open' on the 'article' div.
@@ -111,3 +114,42 @@ const data = [
 
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 */
+function articleMaker (title, date, firstParagraph, secondParagraph, thirdParagraph) {
+  const article = document.createElement('div')
+  const articleTitle = document.createElement('h2')
+  const articleDate = document.createElement('p')
+  const articleP1 = document.createElement('p')
+  const articleP2 = document.createElement('p')
+  const articleP3 = document.createElement('p')
+  const expand = document.createElement('span')
+
+  article.appendChild(articleTitle)
+  article.appendChild(articleDate)
+  article.appendChild(articleP1)
+  article.appendChild(articleP2)
+  article.appendChild(articleP3)
+  article.appendChild(expand)
+
+  article.classList.add('article')
+  articleDate.classList.add('date')
+  expand.classList.add('expandButton')
+
+  articleTitle.textContent = title
+  articleDate.textContent = date
+  articleP1.textContent = firstParagraph
+  articleP2.textContent = secondParagraph
+  articleP3.textContent = thirdParagraph
+
+  expand.addEventListener('click', () =>{
+    
+  })
+
+  return article;
+}
+
+const articles = document.querySelector('.articles')
+console.log (articles)
+
+data.forEach(element => {
+  articles.appendChild(articleMaker(element.title, element.date, element.firstParagraph,element.secondParagraph, element.thirdParagraph))
+})
