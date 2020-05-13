@@ -129,6 +129,7 @@ function articleMaker (title, date, firstParagraph, secondParagraph, thirdParagr
   article.appendChild(articleP2)
   article.appendChild(articleP3)
   article.appendChild(expand)
+  
 
   article.classList.add('article')
   articleDate.classList.add('date')
@@ -139,9 +140,13 @@ function articleMaker (title, date, firstParagraph, secondParagraph, thirdParagr
   articleP1.textContent = firstParagraph
   articleP2.textContent = secondParagraph
   articleP3.textContent = thirdParagraph
+  expand.textContent = '\u25bc'
+ 
+  const articleOpen = document.querySelector('.article-open')
+  console.log ('articleOpen', articleOpen)
 
   expand.addEventListener('click', () =>{
-    
+    article.classList.toggle('article-open')
   })
 
   return article;
