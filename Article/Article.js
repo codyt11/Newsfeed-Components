@@ -86,6 +86,30 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Star Wars Episode I',
+    date: 'Jan 1st, 2019',
+    firstParagraph: `Turmoil has engulfed the
+    Galactic Republic. The taxation
+    of trade routes to outlying star
+    systems is in dispute.`,
+    
+    secondParagraph: `Hoping to resolve the matter
+    with a blockade of deadly
+    battleships, the greedy Trade
+    Federation has stopped all
+    shipping to the small planet
+    of Naboo.`,
+
+    thirdParagraph: ` While the Congress of the
+    Republic endlessly debates
+    this alarming chain of events,
+    the Supreme Chancellor has
+    secretly dispatched two Jedi
+    Knights, the guardians of
+    peace and justice in the
+    galaxy, to settle the conflict....`
   }
 ];
 
